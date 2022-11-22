@@ -16,30 +16,30 @@ function game() {
 		const computerSelection = getComputerChoice();
 		if (playerSelection === "rock" && computerSelection === "scissors" || playerSelection === "paper" && computerSelection === "rock" || playerSelection === "scissors" && computerSelection === "paper") {
 		playerScore++;
-		console.log("You: " + playerSelection + " | Computer: " + computerSelection);
-		console.log("You: " + playerScore + " | Computer: " + computerScore);
+		alert("You: " + playerSelection + " | Computer: " + computerSelection);
+		alert("You: " + playerScore + " | Computer: " + computerScore);
 		}
 		else if (computerSelection === "rock" && playerSelection === "scissors" || computerSelection === "paper" && playerSelection === "rock" || computerSelection === "scissors" && playerSelection === "paper") {
 		computerScore++;
-		console.log("You: " + playerSelection + " | Computer: " + computerSelection);
-		console.log("You: " + playerScore + " | Computer: " + computerScore);
+		alert("You: " + playerSelection + " | Computer: " + computerSelection);
+		alert("You: " + playerScore + " | Computer: " + computerScore);
 		}
 		else if (playerSelection === computerSelection) {
-		console.log("You: " + playerSelection + " | Computer: " + computerSelection);
-		console.log("You: " + playerScore + " | Computer: " + computerScore);
+		alert("You: " + playerSelection + " | Computer: " + computerSelection);
+		alert("You: " + playerScore + " | Computer: " + computerScore);
 		}
 		else {
 			round -= 1;
 		}
 	}
 	if (playerScore > computerScore) {
-		console.log("YOU WIN!");
+		alert("YOU WIN!");
 	}
 	else if (playerScore < computerScore) {
-		console.log("YOU LOSE!");
+		alert("YOU LOSE!");
 	}
 	else if (playerScore === computerScore) {
-		console.log("DRAW!");
+		alert("DRAW!");
 	}
 }
 
