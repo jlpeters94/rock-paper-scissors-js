@@ -11,14 +11,14 @@ function getComputerChoice() {
 let playerScore = 0;
 let computerScore = 0;
 
-options.forEach((option)) => {
+options.forEach((option) => {
 	option.addEventListener("click", function () {
 		const playerSelection = this.value;
 		const computerSelection = getComputerChoice();
 		game();
 		updateScore();
-	})
-}
+	});
+});
 
 function game() {
 
