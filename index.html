@@ -3,14 +3,14 @@
 	<head>
 		<meta charset="UTF-8">
 		<link rel="stylesheet" href="style.css">
-		<script src="script.js"></script>
 		<title>Rock Paper Scissors Game</title>
 	</head>
 	<body>
-		<h1>Rock Paper Scissors</h1>
+		<h1>ROCK PAPER SCISSORS</h1>
 		<button id="option" value="rock">👊</button>
 		<button id="option" value="paper">✋</button>
 		<button id="option" value="scissors">✌</button>
+		<div id="winner"> </div>
 		<div class="score">
 			<table>
 				<tr>
@@ -18,10 +18,12 @@
 					<th><p id="computerScore">0</p></th>
 				</tr>
 				<tr>
-					<th><p>YOU</p></th>
-					<th><p>COM</p></th>
+					<th><p class="you">YOU</p></th>
+					<th><p class="com">COM</p></th>
 				</tr>
+			</table>
 		</div>
 		<div id="history"></div>
+		<script src="script.js"></script>
 	</body>
 </html>
